@@ -1,0 +1,43 @@
+ion-menu-button {
+  color: var(--ion-color-primary);
+}
+
+#container {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#extras {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 15px;
+}
+
+#info-card {
+  max-width: 350px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+ion-card-title,
+ion-card-subtitle {
+  text-align: center;
+}
+
+ion-item {
+  --background: rgba(255, 255, 255, 0.1);
+  --border-radius: 8px;
+  margin: 8px 0;
+}

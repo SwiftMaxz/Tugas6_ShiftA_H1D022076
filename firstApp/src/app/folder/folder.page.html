@@ -1,14 +1,21 @@
-# Menambahkan Komponen di Halaman Ionic
-Berikut adalah langkah-langkah untuk menambahkan komponen baru di halaman Ionic:
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-## 1. Mencari komponen yang dibutuhkan
-Mencari komponen yang dibutuhkan seperti card, button, dan svg avatar pada [website dokumentasi komponen ionic](https://ionicframework.com/docs/components) 
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-## 2. Menerapkan Komponen pada Halaman
-Setelah mendapat komponen, selanjutnya tingal menambahkan komponen tersebut ke halaman `folder.page.html`.
-Berikut bagian komponen yang ditambahkan dan telah dimodifikasi:
-```
-<div id="info-card">
+  <div id="container">
+    <div id="info-card">
       <ion-card>
         <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" alt="Avatar" class="profile-pic" />
         <ion-card-header>
@@ -24,9 +31,8 @@ Berikut bagian komponen yang ditambahkan dan telah dimodifikasi:
         </ion-card-content>
       </ion-card>
     </div>
-```
-```
-<div id="extras">
+
+    <div id="extras">
       <ion-card>
         <ion-card-header>
           <ion-card-title>About Me</ion-card-title>
@@ -36,13 +42,5 @@ Berikut bagian komponen yang ditambahkan dan telah dimodifikasi:
         </ion-card-content>
       </ion-card>
     </div>
-```
-
-
-## 3. Kustomisasi Tampilan
-Kemudian mengkustomisasi tampilan agar sedikit lebih baik pada halaman `folder.page.scss`
-
-# Screenshots
-
-| ![SS1](firstApp/SS1.png) | ![SS2](firstApp/SS2.png) |
-|-----------------------------------|------------------------------------------|
+  </div>
+</ion-content>
